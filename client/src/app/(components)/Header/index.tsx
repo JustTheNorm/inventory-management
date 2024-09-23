@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import React from 'react'
 
 type HeaderProps = {
@@ -6,7 +7,11 @@ type HeaderProps = {
 
 const Header = ({name}: HeaderProps) => {
   return (
-    <h1 className='text-2xl font-semibold text-gray-700'>{name}</h1>
+    <Head>
+      <title>Np-Stock</title>
+      <h1 className='text-2xl font-semibold text-gray-700'>{name}</h1>
+    </Head>
+    
   )
 }
 
